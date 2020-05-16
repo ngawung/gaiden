@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+.wrap {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 100%;
+  background-color: #5f5d5a;
+  position: relative;
+  overflow: hidden;
+}
+
+.component {
+  display: none;
+}
+
+.header {
+ 
+}

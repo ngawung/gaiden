@@ -1,0 +1,27 @@
+{
+  "name": "rf-gaiden",
+  "version": "1.0.0",
+  "description": "Rune Factory Gaiden",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run eruda && watchify src/js/main.js -o www/bundle/main.js -t [babelify] -v",
+    "eruda": "browserify src/js/eruda.js -o www/bundle/eruda.js -t [babelify] -v",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "beep": "echo $\"\\a\""
+  },
+  "author": "Ferdian",
+  "license": "ISC",
+  "dependencies": {
+    "eruda": "^2.3.3",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "phaser": "^3.23.0",
+    "phaser3-rex-plugins": "^1.1.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babelify": "^10.0.0"
+  }
+}
